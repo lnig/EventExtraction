@@ -1,0 +1,773 @@
+[
+  {
+    "category": "WYPADEK",
+    "sentence": "Dziewczyna szła z psem po pasach, gdy nadjechało audi. Trafiła do szpitala [WIDEO]",
+    "extraction": "KTO: Dziewczyna; CO: -; TRIGGER: Trafiła; GDZIE: do szpitala; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Australia: w pożarach mogło zginąć 300 osób",
+    "extraction": "KTO: 300 osób; CO: -; TRIGGER: zginąć; GDZIE: w pożarach; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Gigantyczne osunięcie ziemi. Dramat 47 górników czekających na pomoc w Chinach [WIDEO]",
+    "extraction": "KTO: 47 górników; CO: -; TRIGGER: czekających; GDZIE: w Chinach; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "FBI zatrzymała uczestnika zajść na Kapitolu w bluzie „Camp Auschwitz”",
+    "extraction": "KTO: FBI; CO: uczestnika; TRIGGER: zatrzymała; GDZIE: na Kapitolu; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "USA wyślą do Iraku kolejnych 1500 żołnierzy",
+    "extraction": "KTO: USA; CO: 1500 żołnierzy; TRIGGER: wyślą; GDZIE: do Iraku; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Kolejny pożar na wysypisku śmieci. Ogień wybuchł na warszawskich Bielanach",
+    "extraction": "KTO: Ogień; CO: -; TRIGGER: wybuchł; GDZIE: na warszawskich Bielanach; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "2,3 promila. Pijana policjantka usiadła za kółkiem i wylądowała w rowie",
+    "extraction": "KTO: Policjantka; CO: -; TRIGGER: wylądowała; GDZIE: w rowie; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Samochód dachował i wpadł do stawu. W środku było dwóch mężczyzn",
+    "extraction": "KTO: Samochód; CO: -; TRIGGER: dachował; GDZIE: do stawu; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Nancy Pelosi spotkała się z prezydent Tajwanu. „USA nie zrezygnują”",
+    "extraction": "KTO: Nancy Pelosi; CO: z prezydent Tajwanu; TRIGGER: spotkała się; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Uchodźca okazał się zbrodniarzem wojennym. Dostał dożywocie",
+    "extraction": "KTO: Uchodźca; CO: zbrodniarzem wojennym; TRIGGER: okazał się; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "„Reżim syryjski dokonuje w Aleppo masakry”.",
+    "extraction": "KTO: Reżim syryjski; CO: masakry; TRIGGER: dokonuje; GDZIE: w Aleppo; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Węgry: Wyroki więzienia dla 10 przemytników ludzi",
+    "extraction": "KTO: -; CO: dla 10 przemytników ludzi; TRIGGER: Wyroki więzienia; GDZIE: Węgry; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Wybuch w kopalni w Rosji. Zginęło 14 osób, zaginionych są dziesiątki",
+    "extraction": "KTO: 14 osób; CO: -; TRIGGER: Zginęło; GDZIE: w kopalni w Rosji; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Prokuratorzy skonfiskowali bitcoiny warte miliony, ale nie mają hasła",
+    "extraction": "KTO: Prokuratorzy; CO: bitcoiny; TRIGGER: skonfiskowali; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Rosyjski SU-25 rozbił się podczas startu [WIDEO]",
+    "extraction": "KTO: Rosyjski SU-25; CO: -; TRIGGER: rozbił się; GDZIE: -; KIEDY: podczas startu"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Starsi mężczyźni zginęli w pożarze na Śląsku",
+    "extraction": "KTO: mężczyźni; CO: -; TRIGGER: zginęli; GDZIE: na Śląsku; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Ukraina rozdaje broń cywilom. Deputowany pokazał swój karabin",
+    "extraction": "KTO: Ukraina; CO: broń; TRIGGER: rozdaje; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Skazanie dziennikarek Biełsatu. Matyszkowicz: Instytucje europejskie powinny odpowiedzieć stanowczo",
+    "extraction": "KTO: -; CO: dziennikarek Biełsatu; TRIGGER: Skazanie; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Wielkopolskie: Zmarł 68-latek przygnieciony przez byka",
+    "extraction": "KTO: 68-latek; CO: -; TRIGGER: Zmarł; GDZIE: Wielkopolskie; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Były senator ciągnął psa za samochodem. Świadek: To znęcanie",
+    "extraction": "KTO: senator; CO: psa; TRIGGER: ciągnął; GDZIE: ; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Radni Chełma odebrali honorowe obywatelstwo dowódcy Armii Ludowej",
+    "extraction": "KTO: Radni Chełma; CO: obywatelstwo; TRIGGER: odebrali; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "„Alarm!”: Sąsiedzi wyłudzili mieszkanie od inwalidy",
+    "extraction": "KTO: Sąsiedzi; CO: mieszkanie; TRIGGER: wyłudzili; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "„Żółte kamizelki” znów manifestowały. Przeciw Macronowi i policyjnej przemocy",
+    "extraction": "KTO: „Żółte kamizelki”; CO: -; TRIGGER: manifestowały; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Zamordował ponad 50 osób. Zamachowiec z Christchurch usłyszał wyrok",
+    "extraction": "KTO: Zamachowiec z Christchurch; CO: 50 osób ; TRIGGER: Zamordował; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "„Kama” kierowała grupą sutenerów. 13 osób zatrzymanych",
+    "extraction": "KTO: „Kama”; CO: grupą sutenerów; TRIGGER: kierowała; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Facebook odpowie przed polskim sądem za dyskryminację",
+    "extraction": "KTO: Facebook; CO: za dyskryminację; TRIGGER: odpowie; GDZIE: ; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "„Zatrzymywali przypadkowe osoby”. Organizatorzy marszu oburzeni na policję",
+    "extraction": "KTO: -; CO: przypadkowe osoby; TRIGGER: Zatrzymywali; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "2,5 roku więzienia dla Ryby i grzywna dla Andrzeja K. Wyrok ws. „afery gruntowej”",
+    "extraction": "KTO: Ryby / Andrzeja K.; CO: 2,5 roku więzienia; TRIGGER: Wyrok; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Po ataku Rosji na Kijów, PO atakuje polskiego premiera. Jest odpowiedź",
+    "extraction": "KTO: PO; CO: polskiego premiera; TRIGGER: atakuje; GDZIE: ; KIEDY: "
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Skazano urzędnika, który przez dekadę udawał, że pracuje",
+    "extraction": "KTO: -; CO: urzędnika; TRIGGER: Skazano; GDZIE: -; KIEDY: "
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "27 lat temu upadł rząd premiera Olszewskiego",
+    "extraction": "KTO: rząd; CO: -; TRIGGER: upadł; GDZIE: -; KIEDY: 27 lat temu"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "W wakacje zginęło na drogach 506 osób",
+    "extraction": "KTO: 506 osób; CO: -; TRIGGER: zginęło; GDZIE: na drogach; KIEDY: W wakacje"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Nakłaniali do wyprowadzki; zarzucono im stalking",
+    "extraction": "KTO: -; CO: stalking; TRIGGER: Nakłaniali / zarzucono; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Brytyjski minister ds. wyjścia z UE rezygnuje. „Gest sprzeciwu wobec porozumienia”",
+    "extraction": "KTO: Brytyjski minister; CO: -; TRIGGER: rezygnuje; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "G20 jednak z udziałem Rosji. „Putin przyjedzie na szczyt do Brisbane”",
+    "extraction": "KTO: Putin; CO: -; TRIGGER: przyjedzie; GDZIE: do Brisbane; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Prezydent: Wstrzymuję się z nominacjami sędziowskimi",
+    "extraction": "KTO: Prezydent; CO: z nominacjami; TRIGGER: Wstrzymuję się; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Zniknęły tablice o zbrodni katyńskiej. „Memoriał”: Demontaż był nielegalny",
+    "extraction": "KTO: tablice; CO: -; TRIGGER: Zniknęły; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Parlament Europejski poparł unijną dyrektywę o prawach autorskich",
+    "extraction": "KTO: Parlament Europejski; CO: dyrektywę o prawach autorskich; TRIGGER: poparł; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Rząd zapowiada odszkodowania w razie powikłań poszczepiennych",
+    "extraction": "KTO: Rząd; CO: odszkodowania; TRIGGER: zapowiada; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Awaryjne lądowanie. Zginęła jedna osoba",
+    "extraction": "KTO: osoba; CO: -; TRIGGER: Zginęła; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Nożownik z Murrysville będzie sądzony jak dorosły",
+    "extraction": "KTO: Nożownik; CO: -; TRIGGER: sądzony; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Uprawiał z kobietą seks w centrum miasta. Jest wyrok sądu",
+    "extraction": "KTO: -; CO: seks TRIGGER: Uprawiał; GDZIE: w centrum miasta; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Podejrzany o morderstwo w rękach policji",
+    "extraction": "KTO: Podejrzany; CO: -; TRIGGER: w rękach; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Członkowie grupy Anonymous starli się z policją. W Londynie zatrzymano 28 osób",
+    "extraction": "KTO: Członkowie; CO: z policją; TRIGGER: starli się; GDZIE: W Londynie; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Siły reżimowe atakują rejon Damaszku",
+    "extraction": "KTO: Siły reżimowe; CO: rejon Damaszku; TRIGGER: atakują; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Posłowie zakażą aborcji? Sejm rozpatrzy dwa projekty w tej sprawie",
+    "extraction": "KTO: Sejm; CO: dwa projekty; TRIGGER: rozpatrzy; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Francja tworzy wojska kosmiczne. „Bardzo strategiczny teatr”",
+    "extraction": "KTO: Francja; CO: wojska kosmiczne; TRIGGER: tworzy; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Zakończyło się spotkanie szefa MSZ z Ambasador Izraela Anną Azari",
+    "extraction": "KTO: spotkanie; CO: szefa z Ambasador; TRIGGER: Zakończyło się; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "USA: Po prawie dwóch miesiącach znaleziono zwłoki w podpalonym lombardzie",
+    "extraction": "KTO: -; CO: zwłoki; TRIGGER: znaleziono; GDZIE: w podpalonym lombardzie; KIEDY: Po prawie dwóch miesiącach"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Koszmarna wyprawa w Beskidy. Uczeń wpadł do wodospadu, nauczycielka dostała ataku",
+    "extraction": "KTO: Uczeń ; CO: ; TRIGGER: wpadł; GDZIE: do wodospadu; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Samochód jechał pod prąd. Nie żyje siedem osób, w tym dzieci",
+    "extraction": "KTO: Samochód ; CO: -; TRIGGER: jechał; GDZIE: pod prąd; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Włochy liczą straty po trzęsieniu. Ambasada RP ostrzega",
+    "extraction": "KTO: Włochy; CO: straty; TRIGGER: liczą; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Wykoleił pociąg, bo wietrzył spisek rządu w sprawie koronawirusa",
+    "extraction": "KTO: -; CO: pociąg; TRIGGER: Wykoleił ; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Imigranci blokują port w Calais. Wielu ginie pod kołami tirów",
+    "extraction": "KTO: Imigranci; CO: port; TRIGGER: blokują; GDZIE: w Calais; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Znowu to zrobił. Donald Tusk złamał przepisy",
+    "extraction": "KTO: Donald Tusk; CO: przepisy; TRIGGER: złamał; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Hitlerowski zbrodniarz deportowany do Niemiec. Miał zabić tysiące Żydów",
+    "extraction": "KTO: zbrodniarz; CO: -; TRIGGER: deportowany ; GDZIE: do Niemiec; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Szef administracji Janukowycza podał się do dymisji",
+    "extraction": "KTO: Szef; CO: -; TRIGGER: podał się; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "BIZNES",
+    "sentence": "KNF zawiesiła SKOK „Nike”. Spółdzielcza kasa ogłasza upadłość",
+    "extraction": "KTO: KNF ; CO: SKOK „Nike”; TRIGGER: zawiesiła; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Sklep ze zwierzętami sprzedawał szczeniaki zakażone koronawirusem",
+    "extraction": "KTO: Sklep; CO: szczeniaki; TRIGGER: sprzedawał; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Austriacy wybierają parlament. 31-latek zostanie kanclerzem?",
+    "extraction": "KTO: Austriacy; CO: parlament; TRIGGER: wybierają; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Wołomińscy włamywacze wpadli chwilę po skoku. Są wciąż na wolności",
+    "extraction": "KTO: włamywacze; CO: -; TRIGGER: wpadli; GDZIE:-; KIEDY: chwilę po skoku"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "„Wrzucono ich bez trumien do jam”. Powtórny pogrzeb bohaterów",
+    "extraction": "KTO: ich; CO: -; TRIGGER: Wrzucono / pogrzeb; GDZIE: do jam; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Talibowie zajęli pięć miast w Afganistanie",
+    "extraction": "KTO: Talibowie; CO: pięć miast; TRIGGER: zajęli; GDZIE: w Afganistanie; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Szkoci werbują polskich policjantów. „To szeroko rozumiana prewencja”",
+    "extraction": "KTO: Szkoci; CO: policjantów; TRIGGER: werbują; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Pomorskie: pięciu mężczyzn zginęło w wypadku",
+    "extraction": "KTO: pięciu mężczyzn; CO: -; TRIGGER: zginęło; GDZIE: Pomorskie; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Najpierw wójt, teraz starosta z PO. Zatrzymania CBA w Kołobrzegu",
+    "extraction": "KTO: CBA / starosta; CO: -; TRIGGER: Zatrzymania; GDZIE: w Kołobrzegu; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Wielka Brytania wycofuje okręty z wód okalających Jersey",
+    "extraction": "KTO: Wielka Brytania; CO: okręty; TRIGGER: wycofuje; GDZIE: Jersey; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Rosja atakuje pod Bachmutem? „Wysyłają małe grupki, sprawdzają siłę naszej obrony”",
+    "extraction": "KTO: Rosja; CO: -; TRIGGER: atakuje -; GDZIE: pod Bachmutem; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Jest wstępny raport irańskich śledczych ws. katastrofy ukraińskiego samolotu",
+    "extraction": "KTO: Raport; CO: samolotu ; TRIGGER: katastrofy; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Tragiczny wypadek w garażu. Auto przygniotło 20-latka",
+    "extraction": "KTO: Auto; CO: 20-latka; TRIGGER: przygniotło; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Funkcjonariusze KAS udaremnili przemyt zabytkowych ikon",
+    "extraction": "KTO: Funkcjonariusze KAS; CO: przemyt; TRIGGER: udaremnili; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Wynajęli w Katowicach lokal na jedną noc. Kobieta zmarła od ran kłutych",
+    "extraction": "KTO: Kobieta; CO: od ran; TRIGGER: zmarła; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "„Programy humanitarne upolitycznione”. Korea Płn. chce pozbyć się części pracowników ONZ",
+    "extraction": "KTO: Korea Płn.; CO: pracowników ONZ; TRIGGER: pozbyć się; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Rada UE przyjęła Fundusz na rzecz Sprawiedliwej Transformacji",
+    "extraction": "KTO: Rada UE; CO: Fundusz; TRIGGER: przyjęła; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Autobus zderzył się z ciężarówką i stanął w ogniu. Nie żyje 31 osób",
+    "extraction": "KTO: Autobus ; CO: z ciężarówką; TRIGGER: zderzył się; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Bonnie i Clyde z Ukrainy jeździli po Polsce i okradali stacje. Łupy sprzedawali w na targowiskach",
+    "extraction": "KTO: Bonnie i Clyde; CO: stacje; TRIGGER: okradali; GDZIE: po Polsce; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Rakieta Antares eksplodowała tuż po starcie, jest wideo",
+    "extraction": "KTO: Rakieta Antares; CO: -; TRIGGER: eksplodowała; GDZIE: -; KIEDY: po starcie"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Zabił na drodze innego kierowcę, bo chciał popełnić samobójstwo. Jest wyrok",
+    "extraction": "KTO: -; CO: innego kierowcę; TRIGGER: Zabił; GDZIE: na drodze; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Mazowieckie: pięć osób zginęło w wypadku",
+    "extraction": "KTO: pięć osób; CO: -; TRIGGER: zginęło; GDZIE: Mazowieckie; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Dymisja wiceprezydenta Warszawy",
+    "extraction": "KTO: -; CO: wiceprezydenta Warszawy; TRIGGER: Dymisja; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Prokuratura przesłuchała Karpińskiego. Jutro kontynuacja",
+    "extraction": "KTO: Prokuratura; CO: Karpińskiego; TRIGGER: przesłuchała; GDZIE: -; KIEDY: Jutro"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Egzekucja w Chinach. Stracono byłego prezesa państwowej spółki",
+    "extraction": "KTO: -; CO: prezesa; TRIGGER: Stracono; GDZIE: w Chinach; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Zostawiła dziecko w aucie; zapłaci mandat",
+    "extraction": "KTO: -; CO: dziecko; TRIGGER: Zostawiła; GDZIE: w aucie; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Atak na polskiego żołnierza na granicy. Trafił do szpitala",
+    "extraction": "KTO: -; CO: żołnierza; TRIGGER: Atak ; GDZIE: na granicy; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Kolejny tajemniczy zgon. Nie żyje dyrektor rosyjskiej firmy lotniczej",
+    "extraction": "KTO: dyrektor; CO: -; TRIGGER: Nie żyje; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Biegła w sprawie Weinsteina potrącona przez samochód",
+    "extraction": "KTO: -; CO: samochód; TRIGGER: potrącona; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Syria wpuszcza inspektorów. Nie za późno?",
+    "extraction": "KTO: Syria; CO: inspektorów; TRIGGER: wpuszcza; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Czesi nie odpuszczają polskiej żywności. Zarzuty pod adresem weterynarzy",
+    "extraction": "KTO: Czesi; CO: polskiej żywności; TRIGGER: nie odpuszczają; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Antyrosyjski premier Słowenii przegrał. Politycy PO zadowoleni",
+    "extraction": "KTO: premier Słowenii; CO: -; TRIGGER: przegra; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Zasnęła za kierownicą. Przebudzenie było gwałtowne",
+    "extraction": "KTO: -; CO: -; TRIGGER: Zasnęła; GDZIE: za kierownicą; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Zarzut dzieciobójstwa dla 25-latki. Noworodek znaleziony w sortowni śmieci",
+    "extraction": "KTO: 25-latki; CO: Zarzut -; TRIGGER: dzieciobójstwa; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Związali właścicieli i ukradli z zamku kosztowności warte 2 mln euro",
+    "extraction": "KTO: -; CO: właścicieli / kosztowności; TRIGGER: Związali / ukradli; GDZIE: z zamku; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Jedna osoba poparzona w pożarze mieszkania w Szczecinie",
+    "extraction": "KTO: osoba; CO: mieszkania; TRIGGER: poparzona; GDZIE: w Szczecinie; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Śledztwo w Turcji po zamachu na rosyjskiego ambasadora",
+    "extraction": "KTO: Śledztwo; CO: ambasadora; TRIGGER: zamachu; GDZIE: w Turcji; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Zadźgała roczną córeczkę nożem do owoców",
+    "extraction": "KTO: -; CO: córeczkę; TRIGGER: Zadźgała; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Na Warmii zdewastowano pomnik „kata Wileńszczyzny”",
+    "extraction": "KTO: -; CO: pomnik „kata Wileńszczyzny”; TRIGGER: zdewastowano; GDZIE: Na Warmii; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "PO składa pozew w trybie wyborczym przeciwko premierowi Morawieckiemu",
+    "extraction": "KTO: PO; CO: pozew; TRIGGER: składa; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Gersdorf nie udzieliła pomocy ofierze wypadku. Twierdzi, że „jest szykanowana”",
+    "extraction": "KTO: Gersdorf; CO: pomocy; TRIGGER: nie udzieliła ; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Narciarz wjechał pod koła samochodu i uciekł. Policja szuka świadków zdarzenia",
+    "extraction": "KTO: Narciarz; CO: -; TRIGGER: wjechał; GDZIE: pod koła samochodu; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Policyjna kampania ma zastopować coraz większą plagę gwałtów w przejazdach na aplikację",
+    "extraction": "KTO: kampania; CO: plagę gwałtów; TRIGGER: zastopować; GDZIE: w przejazdach na aplikację; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Krwawy poranek w Egipcie; śmierć żołnierzy",
+    "extraction": "KTO: żołnierzy; CO: -; TRIGGER: śmierć; GDZIE: w Egipcie; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Dwie osoby zginęły w wybuchu samochodu. Policja nie wyklucza zamachu",
+    "extraction": "KTO: osoby; CO: samochodu; TRIGGER: zginęły; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Najechał na tył wojskowej ciężarówki",
+    "extraction": "KTO: -; CO: ciężarówki; TRIGGER: Najechał; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Pastor zamordowany wraz z członkami rodziny",
+    "extraction": "KTO: Pastor; CO: -; TRIGGER: zamordowany; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Zabójstwo w barze dla kierowców w Koninie",
+    "extraction": "KTO: -; CO: -; TRIGGER: Zabójstwo; GDZIE: w Koninie; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Zamordował matkę, został uniewinniony. Skandaliczny wyrok w Gdańsku",
+    "extraction": "KTO: -; CO: matkę; TRIGGER: Zamordował -; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "24 osoby oskarżone o umyślne podpalenia buszu",
+    "extraction": "KTO: 24 osoby; CO: podpalenia buszu; TRIGGER: oskarżone; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Wepchnął Polaka pod tramwaj. Są zarzuty dla 15-latka",
+    "extraction": "KTO: -; CO: Polaka; TRIGGER: Wepchnął; GDZIE: pod tramwaj; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Zamach w Wołgogradzie: 16 ofiar śmiertelnych",
+    "extraction": "KTO: -; CO: -; TRIGGER: Zamach; GDZIE: w Wołgogradzie; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Izraelska armia fałszowała dane na temat ultraortodoksyjnych poborowych",
+    "extraction": "KTO: armia; CO: dane; TRIGGER: fałszowała; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "USA: awantura na Kapitolu o tajne dane",
+    "extraction": "KTO: -; CO: dane; TRIGGER: awantura; GDZIE: na Kapitolu; KIEDY: -"
+  },
+  {
+    "category": "BIZNES",
+    "sentence": "Apple zainwestuje 390 mln dolarów w amerykańskie lasery",
+    "extraction": "KTO: Apple; CO: lasery; TRIGGER: zainwestuje; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Hakerzy przejęli dane z 38 milionów kont",
+    "extraction": "KTO: Hakerzy; CO: dane; TRIGGER: przejęli; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Przetarg na przesyłki sądowe pod lupą CBA",
+    "extraction": "KTO: Przetarg; CO: przesyłki; TRIGGER: pod lupą; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Molestował dziewczynę; nadal poszukiwany",
+    "extraction": "KTO: -; CO: dziewczynę; TRIGGER: Molestował; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Australia wycofa większość żołnierzy z Afganistanu",
+    "extraction": "KTO: Australia; CO: żołnierzy; TRIGGER: wycofa; GDZIE: z Afganistanu; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Francja. Strajki pracowników koncernu TotalEnergies zakłóciły dostawy z kilku rafinerii",
+    "extraction": "KTO: Strajki; CO: dostawy; TRIGGER: zakłóciły; GDZIE: Francja; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "11-latka potrącona na przejściu dla pieszych, sprawca zatrzymany",
+    "extraction": "KTO: 11-latka; CO: -; TRIGGER: potrącona ; GDZIE: na przejściu dla pieszych; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Krakowska wiceprokurator zamordowana. Syn miał jej zadać kilkadziesiąt ciosów nożem",
+    "extraction": "KTO: wiceprokurator; CO: -; TRIGGER: zamordowana; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Chiny: Władze zablokowały Wikipedię we wszystkich językach",
+    "extraction": "KTO: Władze; CO: Wikipedię; TRIGGER: zablokowały; GDZIE: Chiny; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Szef MSWiA składa zawiadomienie ws. Petru. B. lider Nowoczesnej: Nie zastraszycie nas!",
+    "extraction": "KTO: Szef MSWiA; CO: zawiadomienie ws. Petru; TRIGGER: składa; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Syn wójta zaatakował paraolimpijskiego mistrza świata. Zrzucił go do rowu",
+    "extraction": "KTO: Syn wójta; CO: paraolimpijskiego mistrza świata; TRIGGER: zaatakował; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Pijany kierowca śmiertelnie potrącił rowerzystę",
+    "extraction": "KTO: Pijany kierowca; CO: rowerzystę; TRIGGER: potrącił; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Himmler chciał „sprzedać” setki tysięcy Żydów, Polacy pomagali ich ratować. Mamy dokumenty",
+    "extraction": "KTO: Himmler; CO: setki tysięcy Żydów; TRIGGER: chciał sprzedać; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "„GW”: We wrześniu Zawisza wjechał w ogrodzenie sąsiadów",
+    "extraction": "KTO: Zawisza; CO: ogrodzenie; TRIGGER: wjechał; GDZIE: -; KIEDY: We wrześniu"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Palikot z Wojewódzkim łamali prawo? Śpiewak składa zawiadomienie do prokuratury",
+    "extraction": "KTO: Palikot z Wojewódzkim; CO: prawo; TRIGGER: łamali; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Po brutalnej interwencji b. strażnik miejski ze Szczecinka usłyszał zarzuty",
+    "extraction": "KTO: strażnik miejski; CO: zarzuty; TRIGGER: usłyszał ; GDZIE: Szczecinka; KIEDY: Po brutalnej interwencji"
+  },
+  {
+    "category": "BIZNES",
+    "sentence": "Fabryki Chryslera wstrzymały produkcję",
+    "extraction": "KTO: Fabryki Chryslera; CO: produkcję; TRIGGER: wstrzymały; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Długoletnie więzienie za śmierć 700 migrantów. Przemytnik skazany",
+    "extraction": "KTO: więzienie; CO: śmierć 700 migrantów; TRIGGER: śmierć; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Była posłanka PO musi przeprosić senatora PiS Grzegorza Biereckiego",
+    "extraction": "KTO: posłanka PO; CO: senatora PiS Grzegorza Biereckiego; TRIGGER: przeprosić; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "CBA weszło do mieszkania burmistrza Polic",
+    "extraction": "KTO: CBA; CO: burmistrza; TRIGGER: weszło; GDZIE: do mieszkania; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Na Łotwie trwa demontaż sowieckiego pomnika. „Ślad po okupantach”",
+    "extraction": "KTO: -; CO: demontaż sowieckiego pomnika; TRIGGER: trwa; GDZIE: Na Łotwie; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Zamach bombowy w Dagestanie",
+    "extraction": "KTO: -; CO: -; TRIGGER: Zamach bombowy; GDZIE: w Dagestanie; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "W Kamerunie uprowadzono około 80 osób. Większość z nich to dzieci",
+    "extraction": "KTO: -; CO: 80 osób; TRIGGER: uprowadzono; GDZIE: W Kamerunie; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Kanthak: Gersdorf chce zablokować wybór nowego I prezesa Sądu Najwyższego",
+    "extraction": "KTO: Gersdorf; CO: wybór nowego I prezesa Sądu Najwyższego; TRIGGER: zablokować; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Ktoś przyczepił ładunek wybuchowy do gęsi. Ptak cudem się uratował",
+    "extraction": "KTO: Ktoś; CO: ładunek wybuchowy; TRIGGER: przyczepił; GDZIE: do gęsi; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Umorzono sprawę gwałtu w Lesie Kabackim",
+    "extraction": "KTO: -; CO: sprawę gwałtu; TRIGGER: Umorzono; GDZIE: w Lesie Kabackim; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Notariusz zatrzymany w sprawie gangu „łowców mieszkań”",
+    "extraction": "KTO: Notariusz; CO: -; TRIGGER: zatrzymany; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Saakaszwilii ścigany przez Interpol? Wszczęto procedury",
+    "extraction": "KTO: Saakaszwilii; CO: -; TRIGGER: ścigany; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "USA: Senat odkłada głosowanie ws. Syrii",
+    "extraction": "KTO: Senat; CO: głosowanie ws. Syrii; TRIGGER: odkłada; GDZIE: USA; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Pakistan: 9 policjantów zastrzelonych we śnie",
+    "extraction": "KTO: 9 policjantów; CO: -; TRIGGER: zastrzelonych; GDZIE: Pakistan; KIEDY: we śnie"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Tragiczny finał bójki w Krakowie; nie żyje 31-latek",
+    "extraction": "KTO: 31-latek; CO: -; TRIGGER: nie żyje; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "WYPADEK",
+    "sentence": "Koszykarz zginął w wypadku samochodowym. Miał zagrać z Polską",
+    "extraction": "KTO: Koszykarz; CO: -; TRIGGER: zginął; GDZIE: w wypadku samochodowym; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Nożownik zaatakował w Vancouver. Jedna osoba zginęła, są ranni",
+    "extraction": "KTO: Nożownik; CO: -; TRIGGER: zaatakował; GDZIE: w Vancouver; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Po zderzeniu z cysterną autobus stanął w płomieniach. Rośnie liczba ofiar",
+    "extraction": "KTO: autobus; CO: z cysterną; TRIGGER: stanął w płomieniach ; GDZIE: -; KIEDY: Po zderzeniu"
+  },
+  {
+    "category": "POLITYKA",
+    "sentence": "Platforma ustępuje ludowcom w lasach",
+    "extraction": "KTO: Platforma; CO: ludowcom; TRIGGER: ustępuje; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Czeczen podejrzany o zabicie Niemcowa pisze do Putina. Chce „dowieść niewinności na wojnie w Syrii”",
+    "extraction": "KTO: Czeczen; CO: -; TRIGGER: podejrzany o zabicie; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "„Pobito naszego kierowcę”. Ciężarówka Fundacji Pro zatrzymana w centrum Warszawy",
+    "extraction": "KTO: Ciężarówka Fundacji Pro; CO: -; TRIGGER: zatrzymana; GDZIE: w centrum Warszawy; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Pijany duchowny i pogranicznik przemycali papierosy wiatrakowcem",
+    "extraction": "KTO: duchowny i pogranicznik; CO: papierosy; TRIGGER: przemycali; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Policjanci odnaleźli barokowe zabytki. Zginęły w niejasnych okolicznościach",
+    "extraction": "KTO: Policjanci; CO: barokowe zabytki; TRIGGER: odnaleźli; GDZIE: -; KIEDY: -"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "68 lat temu zamordowano majora Zygmunta Szendzielarza „Łupaszkę”",
+    "extraction": "KTO: -; CO: majora Zygmunta Szendzielarza „Łupaszkę”; TRIGGER: zamordowano; GDZIE: -; KIEDY: 68 lat temu"
+  },
+  {
+    "category": "PRZESTEPSTWO",
+    "sentence": "Złodziej zwrócił owieczki ukradzione z szopki bożonarodzeniowej",
+    "extraction": "KTO: Złodziej; CO: owieczki; TRIGGER: zwrócił ukradzione; GDZIE: z szopki bożonarodzeniowej; KIEDY: -"
+  },
+  {
+    "category": "KATASTROFA",
+    "sentence": "Cała szkolna drużyna siatkówki zaginęła w Turcji po trzęsieniu ziemi",
+    "extraction": "KTO: szkolna drużyna; CO: -; TRIGGER: zaginęła; GDZIE: w Turcji; KIEDY: po trzęsieniu ziemi"
+  },
+
+  {
+    "category": "POLITYKA",
+    "sentence": "Duńczycy zabiorą uchodźcom cenne przedmioty. Sfinansują za nie ich pobyt",
+    "extraction": "KTO: Duńczycy; CO: cenne przedmioty; TRIGGER: zabiorą ; GDZIE: -; KIEDY: -"
+  }
+]
