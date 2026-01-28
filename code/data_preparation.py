@@ -7,6 +7,7 @@ from spacy.tokens import DocBin
 from tqdm import tqdm
 from spacy.cli import download
 
+# --- KONFIGURACJA ---
 label_map = {
     "BRAK_ZDARZENIA": 0,
     "PRZESTEPSTWO": 1,
@@ -16,6 +17,7 @@ label_map = {
     "WYPADEK": 5
 }
 
+# --- ŁADOWANIE DANYCH ---
 try:
     with open('../data/train_dataset.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -34,6 +36,7 @@ y = df['label_id'].values
 
 print(f"Wczytano poprawnie: {len(X)} rekordów.")
 
+# --- PODZIAŁ DANYCH (TRENING / WALIDACJA / TEST) ---
 X_train, X_temp, y_train, y_temp = train_test_split(
     X, y, 
     test_size=0.1, 
@@ -51,8 +54,7 @@ X_val, X_test, y_val, y_test = train_test_split(
 print(f"\n--- WYNIK PODZIAŁU ---")
 print(f"Zbiór Treningowy (do nauki):    {len(X_train)} rekordów")
 print(f"Zbiór Walidacyjny (do tuningu): {len(X_val)} rekordów")
-print(f"Zbiór Testowy (Twoje 450):      {len(X_test)} rekordów")
-
+print(f"Zbiór Testowy:      {len(X_test)} rekordów")
 
 unique, counts = np.unique(y_test, return_counts=True)
 print("\nRozkład klas w zbiorze testowym (450):")
@@ -62,6 +64,7 @@ for label_id, count in zip(unique, counts):
     print(f"  {inv_map[label_id]}: {count}")
 
 
+# --- PRZYGOTOWANIE SPACY ---
 print("\n--- KONWERSJA DANYCH DO FORMATU SPACY ---")
 try:
     nlp = spacy.load("pl_core_news_lg")
@@ -70,12 +73,14 @@ except OSError:
     download("pl_core_news_lg")
     nlp = spacy.load("pl_core_news_lg")
 
+# --- FUNKCJA KONWERTUJĄCA ---
 def save_spacy_data(texts, labels, output_file, oversample=False):
     db = DocBin()
     
     df_temp = pd.DataFrame({'text': texts, 'label_id': labels})
     cats_list = ["BRAK_ZDARZENIA", "PRZESTEPSTWO", "POLITYKA", "BIZNES", "KATASTROFA", "WYPADEK"]
     
+    # --- OVERSAMPLING ---
     if oversample:
         print(f"Oversampling włączony dla {output_file}...")
         max_size = df_temp['label_id'].value_counts().max()
@@ -91,6 +96,7 @@ def save_spacy_data(texts, labels, output_file, oversample=False):
         df_temp = pd.concat(new_df_parts).sample(frac=1, random_state=42).reset_index(drop=True)
         print(f"Liczebność po oversamplingu: {len(df_temp)} (było: {len(texts)})")
 
+    # --- TWORZENIE DOKUMENTÓW SPACY ---
     for text, label_id in tqdm(zip(df_temp['text'], df_temp['label_id']), total=len(df_temp), desc=f"Generowanie {output_file}"):
         doc = nlp.make_doc(str(text))
         
@@ -104,6 +110,7 @@ def save_spacy_data(texts, labels, output_file, oversample=False):
     db.to_disk(output_file)
     print(f"Zapisano: {output_file}")
 
+# --- GENEROWANIE PLIKÓW ---
 save_spacy_data(X_train, y_train, "../data/data_train.spacy", oversample=True)
 save_spacy_data(X_val, y_val, "../data/data_dev.spacy", oversample=False)
 save_spacy_data(X_test, y_test, "../data/data_test.spacy", oversample=False)

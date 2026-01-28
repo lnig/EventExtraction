@@ -1,15 +1,16 @@
 import os
 from spacy.cli.train import train
 
+# --- LISTA EKSPERYMENTÓW ---
 experiments = [
     {
         "name": "Exp_A_Ensemble",
-        "config": "../config/config.cfg",
+        "config": "../config/config.cfg",      
         "output": "../models/output_ensemble"
     },
     {
         "name": "Exp_B_BOW",
-        "config": "../config/config_bow.cfg",
+        "config": "../config/config_bow.cfg", 
         "output": "../models/output_bow"
     },
     {
@@ -29,6 +30,7 @@ experiments = [
     }
 ]
 
+# --- PĘTLA TRENINGOWA ---
 for exp in experiments:
     print(f"\nTrenowanie: {exp['name']}...")
     
@@ -36,13 +38,14 @@ for exp in experiments:
         print(f"Brak pliku {exp['config']}!.")
         continue
 
+    # --- URUCHOMIENIE TRENINGU ---
     try:
         train(
             exp['config'],
             exp['output'],
             overrides={
-                "paths.train": "train.spacy",
-                "paths.dev": "dev.spacy"
+                "paths.train": "../data/data_train.spacy",
+                "paths.dev": "../data/data_dev.spacy"
             },
             use_gpu=-1
         )

@@ -6,15 +6,17 @@ import typing_extensions as typing
 from collections import Counter
 import google.generativeai as genai
 
+# --- KONFIGURACJA ---
 API_KEY = ""
 
-FILE_RAW_INPUT = "../data/input_data.json"             
+FILE_RAW_INPUT = "../data/input_data.json"           
 FILE_CLASSIFIED = "../data/classified_data.json"
+FILE_FINAL = "../data/final_dataset.json"
 
 BATCH_SIZE = 50
 TARGET_SIZE = 9000
 NON_EVENT_LABEL = "BRAK_ZDARZENIA"
-MODEL_NAME = "gemma-3-27b-it"
+MODEL_NAME = "gemma-2-27b-it"
 
 class ClassificationResult(typing.TypedDict):
     text: str
@@ -23,6 +25,7 @@ class ClassificationResult(typing.TypedDict):
 class BatchResponse(typing.TypedDict):
     results: list[ClassificationResult]
 
+# ---  WCZYTYWANIE JSON ---
 def load_json(filepath):
     if not os.path.exists(filepath):
         print(f"Brak pliku wejsciowego")
@@ -38,12 +41,14 @@ def load_json(filepath):
         except json.JSONDecodeError:
             print("Plik nie jest JSONem")
             return None
-
+        
+# --- ZAPISYWANIE JSON ---
 def save_json(data, filepath):
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print(f"Zapisano dane")
 
+# --- PRZYGOTOWANIE PROMPTA ---
 def classify_batch(model, sentences_list):
     prompt = f"""
     Jesteś analitykiem zdarzeń (Event Extraction). Twoim celem jest wykrycie CZY w zdaniu opisano konkretne wydarzenie fizyczne, czy jest to tylko opis, opinia lub stan rzeczy.
@@ -58,52 +63,17 @@ def classify_batch(model, sentences_list):
 
    KATEGORIE I SŁOWA KLUCZE (TRIGGERY):
     1. PRZESTEPSTWO (Kryminalne, naruszenie prawa)
-    - Akcje: 
-        aresztować, zatrzymać, zatrzymanie, ująć, obława, nalot policji, pobić, pobicie, napaść, napad, rozbój, ukraść, kradzież, okraść, rabować,
-        włamać się, włamanie, zabić, zamordować, zabójstwo, morderstwo, postrzelić, strzelać, dźgnąć, pchnąć nożem, porwać, uprowadzić, przetrzymywać,
-        torturować, zmuszać, handlować ludźmi, przemycać, przemyt, podrabiać, fałszować dokumenty, oszukać, oszustwo, wyłudzić, wyłudzenie,
-        defraudować, sprzeniewierzyć, uciec z więzienia, zbiegł z aresztu, poszukiwany listem gończym, zdemolować, demolować, niszczyć mienie, wandalizm,
-        podpalić, podpalenie, wtargnąć, napaść na policję, rzucać kamieniami, okupować nielegalnie, użyć przemocy, skazać, wyrok, skazany, oskarżyć, postawić zarzuty,
-        akt oskarżenia,ekstradycja, deportować (po przestępstwie)
-    - Dotyczy:
-        policji, prokuratury, sądów karnych, sprawców, gangów, mafii,
-        terrorystów, przemytników.
-
+    - Akcje: aresztować, zatrzymać, pobić, ukraść, zabić...
     2. KATASTROFA (Duża skala zniszczeń lub ofiary)
-    - Akcje:
-        wybuchnąć, eksplozja, detonacja, spłonąć, pożar, pożar hali, pożar lasu, zawalić się, runąć, katastrofa budowlana, osunięcie ziemi, lawina,
-        powódź, fala powodziowa, zalanie miasta, trzęsienie ziemi, tsunami, tornado, huragan, cyklon, burza stulecia, uderzyć żywioł, meteoryt uderzył,
-        erupcja wulkanu, skażenie chemiczne, radioaktywne, wyciek gazu, katastrofa ekologiczna, zatrucie wody, ewakuować masowo, ewakuacja tysięcy, 
-        rozbił się samolot, wykoleił się pociąg (z ofiarami), statek zatonął
-
+    - Akcje: wybuchnąć, spłonąć, zawalić się, powódź...
     3. WYPADEK (Lokalne, komunikacyjne, jednostkowe)
-    - Akcje:
-        wypadek, kolizja, stłuczka, zderzyć się, potrącić, potrącenie, dachować, wpaść do rowu, uderzyć w drzewo, słup, spaść z wysokości,
-        utonąć, wypadek przy pracy, przygnieść, porazić prądem, zatrucie czadem, poparzyć się, zasypany w wykopie, zasłabnął za kierownicą
-
+    - Akcje: kolizja, potrącić, dachować...
     4. BIZNES (Firmy i gospodarka — tylko KONKRETNE DZIAŁANIA)
-    - Akcje:
-        kupić firmę, sprzedać spółkę, przejąć spółkę, fuzja, wykupić udziały, wejść na giełdę, IPO, wycofać z giełdy, zbankrutować, upadłość, 
-        zlikwidować firmę, zwolnić grupowo, zatrudnić setki, zainwestować, pozyskać inwestora, podpisać kontrakt, restrukturyzacja,zamknąć zakład, 
-        zerwać kontrakt, ogłosić wyniki finansowe, rekordowe zyski, ogromna strata, przejąć długi, otworzyć fabrykę, przenieść produkcję, wycofać produkt z rynku
-
+    - Akcje: kupić firmę, fuzja, zbankrutować...
     5. POLITYKA (Władza, prawo, działania państw i rządów)
-    - Akcje:
-        uchwalić ustawę, podpisać ustawę, zawetować, zmienić prawo, nowelizacja, przyjąć projekt, odrzucić projekt, głosowanie w Sejmie, rozporządzenie, dekret, 
-        ogłosić decyzję rządu, mianować,powołać, odwołać ministra, dymisja, podać się do dymisji, zwolnić z funkcji,powołać rząd, rozwiązać parlament, wygrać wybory, 
-        przegrać wybory, zaprzysiężenie, referendum, spotkać się dyplomatycznie, negocjacje międzynarodowe, zawrzeć porozumienie, zerwać rozmowy, sankcje, embargo,
-        wezwać ambasadora, wydalić dyplomatę, ogłosić stan wyjątkowy, zamknąć granice, wprowadzić zakaz, protestować, manifestacja, demonstracja, strajk, strajk generalny,
-        pikieta, marsz, blokada dróg, blokada parlamentu, presja społeczna, wystąpienie związków zawodowych, ultimatum wobec rządu, postulaty protestujących
-
+    - Akcje: uchwalić ustawę, zdymisjonować, wygrać wybory...
     6. BRAK_ZDARZENIA (Wszystko inne)
-    - opinie, komentarze, publicystyka
-    - sondaże, badania opinii
-    - zapowiedzi wydarzeń
-    - sport (jeśli nie kryminalny)
-    - pogoda
-    - poradniki, ciekawostki
-    - analiza, wywiad, felieton
-    - stan rzeczy, trendy, prognozy
+    - opinie, sondaże, zapowiedzi, sport, pogoda.
 
     --- FORMAT WYJŚCIOWY ---
     Zwróć wynik JAKO CZYSTY JSON.
@@ -119,7 +89,7 @@ def classify_batch(model, sentences_list):
     {json.dumps(sentences_list, ensure_ascii=False)}
     """
 
-
+    # --- WYSŁANIE ZAPYTANIA DO AI ---
     try:
         result = model.generate_content(
             prompt,
@@ -129,6 +99,7 @@ def classify_batch(model, sentences_list):
             )
         )
         
+        # --- CZYSZCZENIE I ODCZYT ODPOWIEDZI ---
         clean_text = result.text.strip()
 
         if clean_text.startswith("```json"):
@@ -163,11 +134,12 @@ def run_classification():
     total_items = len(raw_data)
     classified_data = []
 
+    # --- PRZETWARZANIE KAWAŁKAMI ---
     for i in range(0, total_items, BATCH_SIZE):
         batch_objects = raw_data[i : i + BATCH_SIZE]
         batch_texts = [obj.get("Zdanie", "") for obj in batch_objects]
         
-        print(f"Przetwarzanie...")
+        print(f"Przetwarzanie od {i}...")
         
         api_results = classify_batch(model, batch_texts)
         
@@ -187,6 +159,7 @@ def run_classification():
 
     print(f"\nZakończono klasyfikację")
 
+# --- WYRÓWNYWANIE DANYCH ---
 def run_balancing():
     data = load_json(FILE_CLASSIFIED)
     if not data: return
@@ -216,7 +189,6 @@ def run_balancing():
     random.shuffle(final_dataset)
     save_json(final_dataset, FILE_FINAL)
     
-
     counts = Counter([item["Etykieta"] for item in final_dataset])
     for label, count in counts.most_common():
         print(f"   - {label}: {count}")
